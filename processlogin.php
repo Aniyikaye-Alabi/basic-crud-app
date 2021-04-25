@@ -10,8 +10,13 @@
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {
-            echo "Logged in";
+            $row = mysqli_fetch_assoc($result);
+            $id = $row["id"];
+            // echo $id;
+            // echo "Logged in";
+            header("Location: dashboard.php");
             $_SESSION['username'] = $name;
+            $_SESSION['id'] = $id;
         }
         
         else {

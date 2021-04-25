@@ -7,10 +7,13 @@
     <title>Registration</title>
 </head>
 <body>
+    <h3>Registration Portal</h3>
     <form action="processreg.php" method="POST">
         <input type="text" name="username" value="" placeholder="Username" required>
         <input type="password" name="password" value="" placeholder="Password" required>
         <input type="submit" name="submit" value="Submit">
     </form>
+    <br/>
+    <a href="login.php">Login here</a>
 </body>
 </html>

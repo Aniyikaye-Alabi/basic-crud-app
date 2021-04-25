@@ -8,14 +8,15 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO user_data (username, password) VALUES ('$name', '$userpassword')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
+        echo "Registration successful" . "<br/>";
+        echo "<a href='login.php'>Login here</a>";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
 
 else {
-    echo "what";
+    echo "Empty input(s)";
 }
 
 

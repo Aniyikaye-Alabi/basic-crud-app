@@ -7,6 +7,7 @@
     <title>Login</title>
 </head>
 <body>
+    <h3>Login Page</h3>
     <form action="processlogin.php" method="POST">
         <input type="text" name="username" value="" placeholder="Username" required>
         <input type="password" name="password" value="" placeholder="Password" required>
